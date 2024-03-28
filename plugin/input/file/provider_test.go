@@ -86,6 +86,7 @@ func TestProvierWatcherPaths(t *testing.T) {
 				ctl.RegisterCounter("worker1", "help_test"),
 				ctl.RegisterCounter("worker2", "help_test"),
 				ctl.RegisterGauge("worker3", "help_test"),
+				ctl.RegisterGauge("worker4", "help_test"),
 			)
 			jp := NewJobProvider(config, metrics, &zap.SugaredLogger{})
 
